@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Data Science - SkillUp</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { font-family:'Segoe UI',sans-serif; background: linear-gradient(135deg,#667eea 0%,#764ba2 100%); color:#222; min-height:100vh; }
+    .floating-shapes{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:-1;}
+    .shape{position:absolute;border-radius:50%;background:rgba(255,255,255,0.12);animation:float 6s ease-in-out infinite;}
+    .shape:nth-child(1){width:100px;height:100px;top:10%;left:8%}
+    .shape:nth-child(2){width:70px;height:70px;top:60%;right:8%;animation-delay:2s;}
+    .shape:nth-child(3){width:120px;height:120px;bottom:12%;left:18%;animation-delay:4s;}
+    @keyframes float{0%,100%{transform:translateY(0) rotate(0);}50%{transform:translateY(-20px) rotate(180deg);}}
+
+    .navbar{background:rgba(255,255,255,0.9);}
+    .hero { padding:50px 0; text-align:center; color:white; }
+    .card-syllabus { border-radius:12px; box-shadow:0 8px 24px rgba(0,0,0,0.18); }
+  </style>
+</head>
+<body>
+  <div class="floating-shapes"><div class="shape"></div><div class="shape"></div><div class="shape"></div></div>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="#home">🎓 SkillUp</a>
+      <div class="ms-auto">
+        <a class="btn btn-outline-primary me-2" href="new.html">Back to Courses</a>
+        <a class="btn btn-primary" href="proLogin.html">Login</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container py-5">
+    <div class="hero">
+      <h1>Data Science — Beginner to Practical</h1>
+      <p class="lead">Learn Python, data cleaning, visualization, and basic ML with hands-on projects.</p>
+      <a href="ProSinup.html" class="btn btn-lg btn-light">Enroll Now</a>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-8">
+        <div class="card card-syllabus p-4">
+          <h4>Course Roadmap</h4>
+          <p>Step-by-step path: Python basics → Data manipulation → Visualization → Machine Learning basics → Project</p>
+
+          <h5>Syllabus</h5>
+          <div class="accordion" id="dsAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="ds1">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dsc1">Module 1 — Python Basics</button>
+              </h2>
+              <div id="dsc1" class="accordion-collapse collapse" data-bs-parent="#dsAccordion">
+                <div class="accordion-body">
+                  <ol>
+                    <li>Python syntax, variables, data types</li>
+                    <li>Control flow, functions, file I/O</li>
+                    <li>Mini task: Data processing scripts</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="ds2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dsc2">Module 2 — Pandas & Data Cleaning</button>
+              </h2>
+              <div id="dsc2" class="accordion-collapse collapse" data-bs-parent="#dsAccordion">
+                <div class="accordion-body">
+                  <ol>
+                    <li>Series & DataFrame basics</li>
+                    <li>Missing data, filtering, grouping</li>
+                    <li>Mini task: Clean a messy dataset</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="ds3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dsc3">Module 3 — Visualization</button>
+              </h2>
+              <div id="dsc3" class="accordion-collapse collapse" data-bs-parent="#dsAccordion">
+                <div class="accordion-body">
+                  <ol>
+                    <li>Matplotlib basics</li>
+                    <li>Seaborn for statistical plots</li>
+                    <li>Mini task: Build a dashboard-like report</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="ds4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dsc4">Module 4 — Machine Learning Intro</button>
+              </h2>
+              <div id="dsc4" class="accordion-collapse collapse" data-bs-parent="#dsAccordion">
+                <div class="accordion-body">
+                  <ol>
+                    <li>Supervised vs unsupervised</li>
+                    <li>Linear regression, classification basics</li>
+                    <li>Train/test split, evaluation metrics</li>
+                    <li>Mini task: Build a simple model with scikit-learn</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="ds5">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dsc5">Module 5 — Final Project</button>
+              </h2>
+              <div id="dsc5" class="accordion-collapse collapse" data-bs-parent="#dsAccordion">
+                <div class="accordion-body">
+                  <ol>
+                    <li>Project selection & data sourcing</li>
+                    <li>End-to-end pipeline: load → clean → analyze → model → report</li>
+                    <li>Deliverable: Notebook + presentation</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- accordion -->
+
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="card p-3 info-box">
+          <h6>Quick facts</h6>
+          <p><strong>Duration:</strong> 6–8 weeks</p>
+          <p><strong>Tools:</strong> Python, Pandas, Matplotlib, scikit-learn</p>
+          <a href="ProSinup.html" class="btn btn-primary w-100">Enroll Now</a>
+        </div>
+
+        <div class="card p-3 mt-3">
+          <h6>Projects</h6>
+          <ul>
+            <li>Data cleaning case study</li>
+            <li>Exploratory Data Analysis report</li>
+            <li>Simple ML model + evaluation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-4 card p-3">
+      <h6>FAQ</h6>
+      <p>Beginners welcome — main focus practical exercises and clear steps.</p>
+    </div>
+  </div>
+
+  <footer class="text-center text-white py-2">&copy; 2025 SkillUp</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

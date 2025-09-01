@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Web Development - SkillUp</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { font-family:'Segoe UI',sans-serif; background: linear-gradient(135deg,#667eea 0%,#764ba2 100%); color:#222; min-height:100vh; }
+    .floating-shapes{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:-1;}
+    .shape{position:absolute;border-radius:50%;background:rgba(255,255,255,0.12);animation:float 6s ease-in-out infinite;}
+    .shape:nth-child(1){width:100px;height:100px;top:10%;left:8%}
+    .shape:nth-child(2){width:70px;height:70px;top:60%;right:8%;animation-delay:2s;}
+    .shape:nth-child(3){width:120px;height:120px;bottom:12%;left:18%;animation-delay:4s;}
+    @keyframes float{0%,100%{transform:translateY(0) rotate(0);}50%{transform:translateY(-20px) rotate(180deg);}}
+
+    .navbar{background:rgba(255,255,255,0.9);}
+    .hero { padding:50px 0; text-align:center; color:white; }
+    .card-syllabus { border-radius:12px; box-shadow:0 8px 24px rgba(0,0,0,0.18); }
+    .module-list li { margin-bottom:0.35rem; }
+    .enroll-btn { margin-top:16px; }
+    .info-box { background:rgba(255,255,255,0.95); padding:18px; border-radius:10px; }
+  </style>
+</head>
+<body>
+  <div class="floating-shapes"><div class="shape"></div><div class="shape"></div><div class="shape"></div></div>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-primary" href="#home">🎓 SkillUp</a>
+      <div class="ms-auto">
+        <a class="btn btn-outline-primary me-2" href="new.html">Back to Courses</a>
+        <a class="btn btn-primary" href="proLogin.html">Login</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container py-5">
+    <div class="hero">
+      <h1>Web Development Bootcamp</h1>
+      <p class="lead">From HTML to React — build real projects step-by-step and deploy them.</p>
+      <a href="ProSinup.html" class="btn btn-lg btn-light enroll-btn">Enroll Now</a>
+    </div>
+
+    <div class="row g-4">
+      <!-- Left: Overview & Syllabus -->
+      <div class="col-lg-8">
+        <div class="card card-syllabus p-4 mb-4">
+          <h3>Course Overview</h3>
+          <p>This course covers core web technologies: HTML, CSS, JavaScript, DOM, ES6+, Git, responsive design, and a modern frontend framework (React). Har module practical assignments + 3 final projects.</p>
+
+          <h5 class="mt-3">What you'll learn</h5>
+          <ul>
+            <li>Build responsive websites using HTML & CSS</li>
+            <li>Write clean JavaScript and manipulate DOM</li>
+            <li>Use React to build single-page applications</li>
+            <li>Deploy projects to Netlify / Vercel / GitHub Pages</li>
+          </ul>
+
+          <h5 class="mt-3">Course Duration</h5>
+          <p><strong>8 weeks</strong> — recommended 6–8 hours/week (self-paced ok)</p>
+
+          <h5 class="mt-3">Prerequisites</h5>
+          <ul>
+            <li>Basic computer & internet usage</li>
+            <li>No prior coding experience required</li>
+          </ul>
+
+          <hr>
+
+          <h4>Syllabus — Step by step modules</h4>
+
+          <!-- Bootstrap accordion for modules -->
+          <div class="accordion" id="syllabusAccordion">
+            <!-- Module 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="m1">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                  Module 1 — HTML Basics (Week 1)
+                </button>
+              </h2>
+              <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="m1" data-bs-parent="#syllabusAccordion">
+                <div class="accordion-body">
+                  <ol class="module-list">
+                    <li>Introduction to HTML and structure of a page</li>
+                    <li>Common tags: headings, paragraphs, lists, links, images</li>
+                    <li>Semantic HTML: section, header, footer, article</li>
+                    <li>Forms & inputs basics</li>
+                    <li>Mini task: Build a personal profile page</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <!-- Module 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="m2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                  Module 2 — CSS & Layout (Week 2)
+                </button>
+              </h2>
+              <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="m2" data-bs-parent="#syllabusAccordion">
+                <div class="accordion-body">
+                  <ol class="module-list">
+                    <li>Selectors, box model, margin, padding</li>
+                    <li>Flexbox layouts & responsive columns</li>
+                    <li>Grid basics for advanced layouts</li>
+                    <li>Typography, colors, cards, shadows</li>
+                    <li>Mini task: Convert profile page to responsive layout</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <!-- Module 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="m3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                  Module 3 — JavaScript Essentials (Week 3)
+                </button>
+              </h2>
+              <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="m3" data-bs-parent="#syllabusAccordion">
+                <div class="accordion-body">
+                  <ol class="module-list">
+                    <li>Variables, types, operators, control flow</li>
+                    <li>Functions, arrays, objects</li>
+                    <li>DOM selection and manipulation</li>
+                    <li>Events, forms validation & simple interactivity</li>
+                    <li>Mini task: Create a todo list app</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <!-- Module 4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="m4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                  Module 4 — Modern JS & Tooling (Week 4)
+                </button>
+              </h2>
+              <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="m4" data-bs-parent="#syllabusAccordion">
+                <div class="accordion-body">
+                  <ol class="module-list">
+                    <li>ES6+: arrow functions, let/const, template strings</li>
+                    <li>Fetch API, promises, async/await</li>
+                    <li>Intro to bundlers & npm basics</li>
+                    <li>Version control basics (Git & GitHub)</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <!-- Module 5 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="m5">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                  Module 5 — React Basics (Week 5)
+                </button>
+              </h2>
+              <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="m5" data-bs-parent="#syllabusAccordion">
+                <div class="accordion-body">
+                  <ol class="module-list">
+                    <li>React concepts: components & props</li>
+                    <li>State & hooks (useState, useEffect)</li>
+                    <li>Building small components & routing (react-router)</li>
+                    <li>Mini task: Build a small React app (notes app)</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <!-- Module 6 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="m6">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                  Module 6 — State Management & APIs (Week 6)
+                </button>
+              </h2>
+              <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="m6" data-bs-parent="#syllabusAccordion">
+                <div class="accordion-body">
+                  <ol class="module-list">
+                    <li>Managing complex state (context / simple redux)</li>
+                    <li>Consuming REST APIs, pagination, error handling</li>
+                    <li>Authentication basics & protected routes (concept)</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <!-- Module 7 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="m7">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                  Module 7 — Project Week (Week 7)
+                </button>
+              </h2>
+              <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="m7" data-bs-parent="#syllabusAccordion">
+                <div class="accordion-body">
+                  <ol class="module-list">
+                    <li>Project planning & wireframing</li>
+                    <li>Build final project: e.g., Portfolio + Blog or E-commerce UI</li>
+                    <li>Deploy to Netlify/Vercel and connect to GitHub</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <!-- Module 8 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="m8">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                  Module 8 — Final Touches & Interview Prep (Week 8)
+                </button>
+              </h2>
+              <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="m8" data-bs-parent="#syllabusAccordion">
+                <div class="accordion-body">
+                  <ol class="module-list">
+                    <li>Performance & accessibility basics</li>
+                    <li>Resume tips, portfolio polishing</li>
+                    <li>Common frontend interview questions & mock test</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+          </div> <!-- accordion -->
+
+        </div>
+      </div>
+
+      <!-- Right: Quick info card -->
+      <div class="col-lg-4">
+        <div class="info-box">
+          <h5>Quick Info</h5>
+          <p><strong>Duration:</strong> 8 weeks</p>
+          <p><strong>Effort:</strong> 6–8 hours/week</p>
+          <p><strong>Projects:</strong> 3 (Portfolio, Todo App, Final Project)</p>
+          <p><strong>Certificate:</strong> Yes</p>
+          <a href="ProSinup.html" class="btn btn-primary w-100">Enroll Now</a>
+        </div>
+
+        <div class="mt-4 card p-3">
+          <h6>Projects you'll build</h6>
+          <ul>
+            <li>Responsive Personal Portfolio</li>
+            <li>Todo & Notes App (JS)</li>
+            <li>React SPA (deployed)</li>
+          </ul>
+        </div>
+
+        <div class="mt-4 card p-3">
+          <h6>Support</h6>
+          <p>Email support & community group for doubt-clearing.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="mt-5 card p-4">
+      <h5>FAQ</h5>
+      <p><strong>Q:</strong> Is this course for beginners?<br><strong>A:</strong> Haan, bilkul — basic se start karke advanced tak le jayenge.</p>
+      <p><strong>Q:</strong> Will I get a certificate?<br><strong>A:</strong> Yes, completion certificate after project submission.</p>
+    </div>
+
+  </div>
+
+  <footer class="text-center text-white py-3">
+    <small>&copy; 2025 SkillUp</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
